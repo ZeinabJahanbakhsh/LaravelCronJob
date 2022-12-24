@@ -1,0 +1,400 @@
+{
+	"info": {
+		"_postman_id": "92f1e24e-9b9e-4d4f-9a2e-d10de16f89c8",
+		"name": "LiaTeam",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "10148903"
+	},
+	"item": [
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "Register",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"user06@user.com\",\r\n    \"name\" : \"newUser06\",\r\n    \"password\":\"123456789\",\r\n    \"c_password\": \"123456789\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{local}}/api/register",
+							"host": [
+								"{{local}}"
+							],
+							"path": [
+								"api",
+								"register"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "zeinab",
+									"disabled": true
+								},
+								{
+									"key": "email",
+									"value": "admin@admin.com",
+									"disabled": true
+								},
+								{
+									"key": "password",
+									"value": "123456789",
+									"disabled": true
+								},
+								{
+									"key": "c_password",
+									"value": "123456789",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"liateam@liateam.com\",\r\n    \"password\":\"Lia@1234\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{local}}/api/login",
+							"host": [
+								"{{local}}"
+							],
+							"path": [
+								"api",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Logout",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiMDVlZTI5NTkyMTBlMGQzZWUyMzQ5YzM2OGMzZGRmZjI4NTc1MmIwNzg0OTZmZTU3MGIyMmI2OTI0MDRiNDQ2NGJiNDlhYWNjZDM3MjM3ZDEiLCJpYXQiOjE2NzE4MzA0MzguNDEyNTk4LCJuYmYiOjE2NzE4MzA0MzguNDEyNjEzLCJleHAiOjE3MDMzNjY0MzguMzc2MzQzLCJzdWIiOiIzIiwic2NvcGVzIjpbXX0.dthuf5BhiVZLZUyqnyaJVkIica9PhNvAM93jPFP3jRMX1kO6V0yfwUW7Qr0ETNu73O-yxUsr-QV2KD5nyBU8kN2cuyYS9Q0Jdaym60BVHJGoa9Pg8X-zaGYIey7xIL4YGi9tXYVDmdXMlpEaOzJyIaBuF1iZKecs8XeZJgz3Cj_oW25s6Sdm-OE0UNRX1tEBkK75RWPuv_76xDofrm3TxP_jX-njQjD-Antb3ccH3wkgnaT1UPCOv6M7fzQrBYDg_THlREpFztzuSjJTE5A7zTO6cnEPrIrgTe0gUd-Z_SUOlPA0iJFsyrkq5pk0_VpwK6-L7eYyotLC842DALEHxFzsUOvJsfBZsBayKzgOlQMf1G4ZWZ2YF4TUh5U9dHOatGpgnPgKQVjipy3Rp_FW87f9jUM6sMSGaWbphHwRyoGGMAfNh6LWEC56KV8z422F7Jpz7_asGw4OMe5ijiknqK8Oqcd1_cvKCwshLAtDqrIHdPOQCh7ZmUG5QSgIoSNs7O7wAvmif2K_OxA27-6udgFTsNFbG0v1uGZ7uLtZSHxmiEvkqL1ejO8-_JkmS40GNRAzgX9iVLQ1WhQzq1sQ4WStHkFhPFVQb2jk8pXB1HtnxmzFA6KVLe5zl-ydTGOD7UyntVRh93DLo7TL0O-su3ppQ_h7KLzkWuQNP1oZg4w"
+							},
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "{{local}}/api/logout",
+							"host": [
+								"{{local}}"
+							],
+							"path": [
+								"api",
+								"logout"
+							],
+							"query": [
+								{
+									"key": "Cache-Control",
+									"value": "0",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "userDetail",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiZWY4ZThhNWE5ZmJhMTlhYTM1YTRkYTdjNGM0ZTkwNmYzOTkwNDc2ZDYyODUzNGYwMWQ2MGIyNzA3ZjBlYzQ4MTJjZmNhZWU2ZTU5MmNiZDYiLCJpYXQiOjE2NzE4MzA3NDIuMTg4NDk5LCJuYmYiOjE2NzE4MzA3NDIuMTg4NTA5LCJleHAiOjE3MDMzNjY3NDIuMTczMzIsInN1YiI6IjMiLCJzY29wZXMiOltdfQ.Prwvhk22sGdeqQnh1RD7x8b7NYAoftBAknSd5x53o9ZUy5zWPZaChB6MVzEYNWbcidwqtD7re2BcNHgGpLJuCi0HKoBql98mkd17UZ8UogPau6lD9FtMfdfstl_K1kWw3a4ZuSI0rioWF0c9MZQsuNinmaZXSjiPVhsFL6qThl1jER4rdpHuMm-7erZi6qNYdQ6-pjIebLXvpkSEdD4FedW2P66aSXfzUXkOUjcRw3iLCwRu6NeeqWaVIWGr1faBf8wSuYF8uQ3gtsqlNL4BIx8-AaA_X26-M1XEw8xiCrisF3Limk-EDoJ-HMY-GX0zeUEjX5Fh0LqR5HSsvG30PJ9ngtRCiqTpR2GA6Gvz7cnZzv_Iuz2R-RB77nPG3JEfao5OeqBu1bVNs-0QfcY7J-g_uFJ0T6dFcSFLWCvHSYu-cdsp7jyN7LCghbInDVRk9lrWGN59kpuE5noP-nZj_3zhLLB9Dm3bEDCOeS-jS09jzLBce6DIK7Wsk3YjLpe951Z87OdapStVsRBdmBKfY8MC08UwmlH3howOh2rwASO4FR-yQTrFV6rO_Zi2HWb2biP8nDEkxtKic-pHgvwnNEH8Lx9rOyhlTsmyfEJXZ4VTaEhD7K9L6MxZl9o_Ub4ohJdHBXpde2NZki3sxFohUQYtOJ83zQUChMFEXiSqVks"
+							},
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "{{local}}/api/user-detail",
+							"host": [
+								"{{local}}"
+							],
+							"path": [
+								"api",
+								"user-detail"
+							],
+							"query": [
+								{
+									"key": "Cache-Control",
+									"value": "0",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "GetLists",
+			"item": [
+				{
+					"name": "ListProcess",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiZWY4ZThhNWE5ZmJhMTlhYTM1YTRkYTdjNGM0ZTkwNmYzOTkwNDc2ZDYyODUzNGYwMWQ2MGIyNzA3ZjBlYzQ4MTJjZmNhZWU2ZTU5MmNiZDYiLCJpYXQiOjE2NzE4MzA3NDIuMTg4NDk5LCJuYmYiOjE2NzE4MzA3NDIuMTg4NTA5LCJleHAiOjE3MDMzNjY3NDIuMTczMzIsInN1YiI6IjMiLCJzY29wZXMiOltdfQ.Prwvhk22sGdeqQnh1RD7x8b7NYAoftBAknSd5x53o9ZUy5zWPZaChB6MVzEYNWbcidwqtD7re2BcNHgGpLJuCi0HKoBql98mkd17UZ8UogPau6lD9FtMfdfstl_K1kWw3a4ZuSI0rioWF0c9MZQsuNinmaZXSjiPVhsFL6qThl1jER4rdpHuMm-7erZi6qNYdQ6-pjIebLXvpkSEdD4FedW2P66aSXfzUXkOUjcRw3iLCwRu6NeeqWaVIWGr1faBf8wSuYF8uQ3gtsqlNL4BIx8-AaA_X26-M1XEw8xiCrisF3Limk-EDoJ-HMY-GX0zeUEjX5Fh0LqR5HSsvG30PJ9ngtRCiqTpR2GA6Gvz7cnZzv_Iuz2R-RB77nPG3JEfao5OeqBu1bVNs-0QfcY7J-g_uFJ0T6dFcSFLWCvHSYu-cdsp7jyN7LCghbInDVRk9lrWGN59kpuE5noP-nZj_3zhLLB9Dm3bEDCOeS-jS09jzLBce6DIK7Wsk3YjLpe951Z87OdapStVsRBdmBKfY8MC08UwmlH3howOh2rwASO4FR-yQTrFV6rO_Zi2HWb2biP8nDEkxtKic-pHgvwnNEH8Lx9rOyhlTsmyfEJXZ4VTaEhD7K9L6MxZl9o_Ub4ohJdHBXpde2NZki3sxFohUQYtOJ83zQUChMFEXiSqVks",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{local}}/api/getListProcess",
+							"host": [
+								"{{local}}"
+							],
+							"path": [
+								"api",
+								"getListProcess"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getDirectoriesList",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiZWY4ZThhNWE5ZmJhMTlhYTM1YTRkYTdjNGM0ZTkwNmYzOTkwNDc2ZDYyODUzNGYwMWQ2MGIyNzA3ZjBlYzQ4MTJjZmNhZWU2ZTU5MmNiZDYiLCJpYXQiOjE2NzE4MzA3NDIuMTg4NDk5LCJuYmYiOjE2NzE4MzA3NDIuMTg4NTA5LCJleHAiOjE3MDMzNjY3NDIuMTczMzIsInN1YiI6IjMiLCJzY29wZXMiOltdfQ.Prwvhk22sGdeqQnh1RD7x8b7NYAoftBAknSd5x53o9ZUy5zWPZaChB6MVzEYNWbcidwqtD7re2BcNHgGpLJuCi0HKoBql98mkd17UZ8UogPau6lD9FtMfdfstl_K1kWw3a4ZuSI0rioWF0c9MZQsuNinmaZXSjiPVhsFL6qThl1jER4rdpHuMm-7erZi6qNYdQ6-pjIebLXvpkSEdD4FedW2P66aSXfzUXkOUjcRw3iLCwRu6NeeqWaVIWGr1faBf8wSuYF8uQ3gtsqlNL4BIx8-AaA_X26-M1XEw8xiCrisF3Limk-EDoJ-HMY-GX0zeUEjX5Fh0LqR5HSsvG30PJ9ngtRCiqTpR2GA6Gvz7cnZzv_Iuz2R-RB77nPG3JEfao5OeqBu1bVNs-0QfcY7J-g_uFJ0T6dFcSFLWCvHSYu-cdsp7jyN7LCghbInDVRk9lrWGN59kpuE5noP-nZj_3zhLLB9Dm3bEDCOeS-jS09jzLBce6DIK7Wsk3YjLpe951Z87OdapStVsRBdmBKfY8MC08UwmlH3howOh2rwASO4FR-yQTrFV6rO_Zi2HWb2biP8nDEkxtKic-pHgvwnNEH8Lx9rOyhlTsmyfEJXZ4VTaEhD7K9L6MxZl9o_Ub4ohJdHBXpde2NZki3sxFohUQYtOJ83zQUChMFEXiSqVks",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{local}}/api/directoriesList",
+							"host": [
+								"{{local}}"
+							],
+							"path": [
+								"api",
+								"directoriesList"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CreateDirectory",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiZWY4ZThhNWE5ZmJhMTlhYTM1YTRkYTdjNGM0ZTkwNmYzOTkwNDc2ZDYyODUzNGYwMWQ2MGIyNzA3ZjBlYzQ4MTJjZmNhZWU2ZTU5MmNiZDYiLCJpYXQiOjE2NzE4MzA3NDIuMTg4NDk5LCJuYmYiOjE2NzE4MzA3NDIuMTg4NTA5LCJleHAiOjE3MDMzNjY3NDIuMTczMzIsInN1YiI6IjMiLCJzY29wZXMiOltdfQ.Prwvhk22sGdeqQnh1RD7x8b7NYAoftBAknSd5x53o9ZUy5zWPZaChB6MVzEYNWbcidwqtD7re2BcNHgGpLJuCi0HKoBql98mkd17UZ8UogPau6lD9FtMfdfstl_K1kWw3a4ZuSI0rioWF0c9MZQsuNinmaZXSjiPVhsFL6qThl1jER4rdpHuMm-7erZi6qNYdQ6-pjIebLXvpkSEdD4FedW2P66aSXfzUXkOUjcRw3iLCwRu6NeeqWaVIWGr1faBf8wSuYF8uQ3gtsqlNL4BIx8-AaA_X26-M1XEw8xiCrisF3Limk-EDoJ-HMY-GX0zeUEjX5Fh0LqR5HSsvG30PJ9ngtRCiqTpR2GA6Gvz7cnZzv_Iuz2R-RB77nPG3JEfao5OeqBu1bVNs-0QfcY7J-g_uFJ0T6dFcSFLWCvHSYu-cdsp7jyN7LCghbInDVRk9lrWGN59kpuE5noP-nZj_3zhLLB9Dm3bEDCOeS-jS09jzLBce6DIK7Wsk3YjLpe951Z87OdapStVsRBdmBKfY8MC08UwmlH3howOh2rwASO4FR-yQTrFV6rO_Zi2HWb2biP8nDEkxtKic-pHgvwnNEH8Lx9rOyhlTsmyfEJXZ4VTaEhD7K9L6MxZl9o_Ub4ohJdHBXpde2NZki3sxFohUQYtOJ83zQUChMFEXiSqVks",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{local}}/api/createDirectory/jahan",
+							"host": [
+								"{{local}}"
+							],
+							"path": [
+								"api",
+								"createDirectory",
+								"jahan"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CreateFile",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiZWY4ZThhNWE5ZmJhMTlhYTM1YTRkYTdjNGM0ZTkwNmYzOTkwNDc2ZDYyODUzNGYwMWQ2MGIyNzA3ZjBlYzQ4MTJjZmNhZWU2ZTU5MmNiZDYiLCJpYXQiOjE2NzE4MzA3NDIuMTg4NDk5LCJuYmYiOjE2NzE4MzA3NDIuMTg4NTA5LCJleHAiOjE3MDMzNjY3NDIuMTczMzIsInN1YiI6IjMiLCJzY29wZXMiOltdfQ.Prwvhk22sGdeqQnh1RD7x8b7NYAoftBAknSd5x53o9ZUy5zWPZaChB6MVzEYNWbcidwqtD7re2BcNHgGpLJuCi0HKoBql98mkd17UZ8UogPau6lD9FtMfdfstl_K1kWw3a4ZuSI0rioWF0c9MZQsuNinmaZXSjiPVhsFL6qThl1jER4rdpHuMm-7erZi6qNYdQ6-pjIebLXvpkSEdD4FedW2P66aSXfzUXkOUjcRw3iLCwRu6NeeqWaVIWGr1faBf8wSuYF8uQ3gtsqlNL4BIx8-AaA_X26-M1XEw8xiCrisF3Limk-EDoJ-HMY-GX0zeUEjX5Fh0LqR5HSsvG30PJ9ngtRCiqTpR2GA6Gvz7cnZzv_Iuz2R-RB77nPG3JEfao5OeqBu1bVNs-0QfcY7J-g_uFJ0T6dFcSFLWCvHSYu-cdsp7jyN7LCghbInDVRk9lrWGN59kpuE5noP-nZj_3zhLLB9Dm3bEDCOeS-jS09jzLBce6DIK7Wsk3YjLpe951Z87OdapStVsRBdmBKfY8MC08UwmlH3howOh2rwASO4FR-yQTrFV6rO_Zi2HWb2biP8nDEkxtKic-pHgvwnNEH8Lx9rOyhlTsmyfEJXZ4VTaEhD7K9L6MxZl9o_Ub4ohJdHBXpde2NZki3sxFohUQYtOJ83zQUChMFEXiSqVks",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "fileName",
+									"value": "sample2",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "fileContent",
+									"value": "sample content",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "{{local}}/api/createFile/sample1",
+							"host": [
+								"{{local}}"
+							],
+							"path": [
+								"api",
+								"createFile",
+								"sample1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getFilesList",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiZWY4ZThhNWE5ZmJhMTlhYTM1YTRkYTdjNGM0ZTkwNmYzOTkwNDc2ZDYyODUzNGYwMWQ2MGIyNzA3ZjBlYzQ4MTJjZmNhZWU2ZTU5MmNiZDYiLCJpYXQiOjE2NzE4MzA3NDIuMTg4NDk5LCJuYmYiOjE2NzE4MzA3NDIuMTg4NTA5LCJleHAiOjE3MDMzNjY3NDIuMTczMzIsInN1YiI6IjMiLCJzY29wZXMiOltdfQ.Prwvhk22sGdeqQnh1RD7x8b7NYAoftBAknSd5x53o9ZUy5zWPZaChB6MVzEYNWbcidwqtD7re2BcNHgGpLJuCi0HKoBql98mkd17UZ8UogPau6lD9FtMfdfstl_K1kWw3a4ZuSI0rioWF0c9MZQsuNinmaZXSjiPVhsFL6qThl1jER4rdpHuMm-7erZi6qNYdQ6-pjIebLXvpkSEdD4FedW2P66aSXfzUXkOUjcRw3iLCwRu6NeeqWaVIWGr1faBf8wSuYF8uQ3gtsqlNL4BIx8-AaA_X26-M1XEw8xiCrisF3Limk-EDoJ-HMY-GX0zeUEjX5Fh0LqR5HSsvG30PJ9ngtRCiqTpR2GA6Gvz7cnZzv_Iuz2R-RB77nPG3JEfao5OeqBu1bVNs-0QfcY7J-g_uFJ0T6dFcSFLWCvHSYu-cdsp7jyN7LCghbInDVRk9lrWGN59kpuE5noP-nZj_3zhLLB9Dm3bEDCOeS-jS09jzLBce6DIK7Wsk3YjLpe951Z87OdapStVsRBdmBKfY8MC08UwmlH3howOh2rwASO4FR-yQTrFV6rO_Zi2HWb2biP8nDEkxtKic-pHgvwnNEH8Lx9rOyhlTsmyfEJXZ4VTaEhD7K9L6MxZl9o_Ub4ohJdHBXpde2NZki3sxFohUQYtOJ83zQUChMFEXiSqVks",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{local}}/api/filesList",
+							"host": [
+								"{{local}}"
+							],
+							"path": [
+								"api",
+								"filesList"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
