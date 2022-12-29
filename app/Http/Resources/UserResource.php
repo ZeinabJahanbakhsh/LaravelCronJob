@@ -18,7 +18,7 @@ class UserResource extends JsonResource
             'id'           => $this->resource->id,
             'name'         => $this->resource->name,
             'email'        => $this->resource->email,
-            'access_token' => $this->resource->token->accessToken
+            //'access_token' => $this->resource->token->accessToken
         ];
 
         //return parent::toArray($request);

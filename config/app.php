@@ -168,6 +168,8 @@ return [
 
         //add Zjb
         Laravel\Passport\PassportServiceProvider::class,
+        App\Providers\RepositoryServiceProvider::class,
+
 
         /*
          * Application Service Providers...

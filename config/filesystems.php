@@ -42,6 +42,19 @@ return [
             'visibility' => 'public',
         ],
 
+        //add zjb
+        'public_uploads_files' => [
+            'driver' => 'local',
+            'root'   => storage_path('app/public/createdFile'),
+        ],
+
+        'public_uploads_dir' => [
+            'driver' => 'local',
+            'root'   => storage_path('app/public/createdDir'),
+        ],
+
+
+
         's3' => [
             'driver' => 's3',
             'key' => env('AWS_ACCESS_KEY_ID'),
