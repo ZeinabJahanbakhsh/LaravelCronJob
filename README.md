@@ -11,13 +11,14 @@
 <ul>
 <li>Sign up</li>
 <li>Authenticate via token.</li>
-<li>Get list of running processes on the server.</li>
 <li> Get a directory name and create a directory with that name in user’s opt/myprogram/$username/" directory.</li>
 <li>Get a filename and create a file with that name in user’s "/opt/myprogram/$username/"directory</li>
 <li> Get list of all directories in "/opt/myprogram/$username/" directory</li>
 <li>Get list of all files in "/opt/myprogram/$username/" directory</li>
-</ul>
+<li>Add your user with factory</li>
+<li>Having test for endpoints.</li>
 
+</ul>
 
 ## Used package
 <p>Laravel passport</p>
