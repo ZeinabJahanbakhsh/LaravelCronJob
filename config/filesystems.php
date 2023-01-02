@@ -53,6 +53,11 @@ return [
             'root'   => storage_path('app/public/createdDir'),
         ],
 
+        'cronJobInfoUser' => [
+            'driver' => 'local',
+            'root'   => storage_path('app/public/cronJobInfoUser'),
+        ],
+
 
 
         's3' => [
