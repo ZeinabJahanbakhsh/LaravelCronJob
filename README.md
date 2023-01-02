@@ -17,7 +17,7 @@
 <li>Get list of all files</li>
 <li>Add your user with factory</li>
 <li>Having test for endpoints.</li>
-<li>Send mail usig cron job </li>
+<li>Send mail usig cron job (create command for sending mail using cron jab) </li>
 
 </ul>
 
