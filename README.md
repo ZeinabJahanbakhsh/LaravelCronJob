@@ -25,5 +25,23 @@
 <p>Laravel passport for Authenticate user => <a href="https://laravel.com/docs/8.x/passport"> Read more</a></p>
 
 ## Cron job
-<p>Using mailgun that is a free api to send and receive email => <a href="https://www.mailgun.com"> Read more</a></p>
+<p>Using mailgun that is a free api to send and receive email => <a href="https://www.mailgun.com">Read more</a></p>
+<p>Task Scheduling in laravel framework => <a href="https://laravel.com/docs/8.x/scheduling">Read more</a></p>
 
+Configuration mailgun:
+<p>Create an account on mailgun next you will get mail configuration as mail host, mail port, mail username, mail passwor and edit the MAIL confing details in .env:</p>
+
+```
+MAIL_MAILER=mailgun
+MAIL_HOST=smtp.mailgun.org
+MAIL_PORT=587
+MAIL_USERNAME=postmaster@.....
+MAIL_PASSWORD=784.....
+MAIL_ENCRYPTION=tls
+MAIL_FROM_ADDRESS=qazx@sandboxda........mailgun.org
+MAIL_FROM_NAME="${APP_NAME}"
+MAILGUN_ENDPOINT=api.mailgun.net
+MAILGUN_DOMAIN=sandbox..........mailgun.org
+MAILGUN_SECRET=7ea..........
+
+```
