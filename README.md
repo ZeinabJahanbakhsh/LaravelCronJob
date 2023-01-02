@@ -12,13 +12,18 @@
 <li>Sign up</li>
 <li>Authenticate via token.</li>
 <li> Get a directory name and create a directory with that name in user’s opt/myprogram/$username/" directory.</li>
-<li>Get a filename and create a file with that name in user’s "/opt/myprogram/$username/"directory</li>
-<li> Get list of all directories in "/opt/myprogram/$username/" directory</li>
-<li>Get list of all files in "/opt/myprogram/$username/" directory</li>
+<li>Get a filename and create a file with that name in </li>
+<li> Get list of all directories </li>
+<li>Get list of all files</li>
 <li>Add your user with factory</li>
 <li>Having test for endpoints.</li>
+<li>Send mail usig cron job </li>
 
 </ul>
 
 ## Used package
-<p>Laravel passport</p>
+<p>Laravel passport for Authenticate user => <a href="https://laravel.com/docs/8.x/passport"> Read more</a></p>
+
+## Cron job
+<p>Using mailgun that is a free api to send and receive email => <a href="https://www.mailgun.com"> Read more</a></p>
+
